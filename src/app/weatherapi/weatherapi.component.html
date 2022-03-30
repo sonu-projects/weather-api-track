@@ -1,0 +1,20 @@
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+          <th scope="col">Code</th>
+          <th scope="col">Day</th>
+          <th scope="col">Night</th>
+          <th scope="col">Icon</th>
+         
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor= "let user of users">
+          <td class="table-light">{{ user.code}}</td>
+          <td class="table-light">{{ user.day }}</td>
+          <td class="table-primary">{{ user.night }}</td>
+          <td class="table-secondary">{{ user.icon}}</td>
+        </tr>
+      </tbody>
+    </table>
